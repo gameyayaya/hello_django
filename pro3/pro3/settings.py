@@ -69,6 +69,8 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'pro3.wsgi.application'
 
 

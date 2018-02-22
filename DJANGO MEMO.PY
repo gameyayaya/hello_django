@@ -93,4 +93,6 @@ git remote add origin https://github.com/gameyayaya/hel lo_django.git
 git push -u origin master
 
 		
-		
+************
+1.proj/url  建立网页/hello ， 链结对应的funtion
+2.app/views 定义funtion内容 ， 链结到app/template里的html #template必须放在app下
