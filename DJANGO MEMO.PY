@@ -94,5 +94,37 @@ git push -u origin master
 
 		
 ************
-1.proj/url  建立网页/hello ， 链结对应的funtion
+1.proj/url  建立网页/hello ， 映射对应的funtion:hello_view
 2.app/views 定义funtion内容 ， 链结到app/template里的html #template必须放在app下
+
+
+
+1.proj/url  建立网页/hello ， 链结对应的funtion
+	from django.conf.urls import url
+	from django.contrib import admin
+	#from app3.views import hello_view
+
+	urlpatterns = [
+		url(r'^admin/', admin.site.urls),
+		#url(r'^hello/', hello_view),
+	]
+
+
+2.app/views 定义funtion内容 ， 链结到app/template里的html #template必须放在app下
+app/views.py
+	def hello_view(request):
+    return render(request, 'hello_django.html', {
+        'data': "Hello Django ", #把变数data  设为文字Hello Django
+    })
+
+app/templates/hello_django.html
+		<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+		{{data}}
+	</body>
+	</html>
