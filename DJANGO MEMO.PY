@@ -88,7 +88,9 @@ django_admin.py
 把proj1的web run起来，去127.0.0.1/admin    后台试试
 	manage.py runserver
 		
-		
-		
+ok后，去github建个新仓库把东西git进入
+git remote add origin https://github.com/gameyayaya/hel lo_django.git
+git push -u origin master
+
 		
 		
